@@ -29,6 +29,8 @@
 
   .tabs{
     z-index: 1;
+    display: flex;
+
     .btn-login{
       display: flex;
       align-items: center;
@@ -50,6 +52,37 @@
       &:hover{
         color: #bff1ff;
        }
+    }
+  }
+
+  .dropdown{
+    display: none;
+
+    a{
+      color: black;
+    }
+
+  }
+
+  .img-option{
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 658px) {
+    .tabs{
+      display: none;
+    }
+
+    .dropdown{
+      display: flex;
+    }
+
+    .bg-absolute{
+      width: 100vw;
+      border-radius: 0;
+      height: 50px;
+      left: 0;
     }
   }
 

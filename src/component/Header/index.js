@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
-import { Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label, Button } from 'reactstrap';
+import Option from '../../svg/options.svg';
+import { Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Label, Button, 
+  UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem  } from 'reactstrap';
 import './style.scss';
 
 export default function Header(){
@@ -13,11 +15,33 @@ export default function Header(){
       <div className="d-flex flex-row align-items-center px-4 header">
         <a href="/" className="bold main-title">Home</a>
         <div className="bg-absolute" />
-        <div className="d-flex flex-row justify-content-end flex-1 tabs">
+        <div className="flex-row justify-content-end flex-1 tabs">
             <a href="#about" className="tab">ABOUT</a>
             <a href="#pricing" className="tab">PRICING</a>
             <a href="#contact" className="tab">CONTACT</a>
             <button onClick={() => setModalShow(true)} className="btn btn-login">Login</button>
+        </div>
+        <div className="flex-row justify-content-end flex-1 dropdown">
+            <UncontrolledDropdown direction="start" >
+              <DropdownToggle color="transparent" >
+                <img alt="Option" className="img-option" src={Option} />
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>
+                  <a href="#about">ABOUT</a>
+                </DropdownItem>
+                <DropdownItem>
+                  <a href="#about">PRICING</a>
+                </DropdownItem>
+                <DropdownItem>
+                  <a href="#about">CONTACT</a>
+                </DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>
+                  <span onClick={() => setModalShow(true)} className="cursor-pointer">Login</span>
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
         </div>
         <Modal backdrop="static" toggle={toggle} isOpen={modalShow}>
           <ModalHeader toggle={toggle} >Login</ModalHeader>

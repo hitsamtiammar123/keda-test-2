@@ -20,4 +20,28 @@
     height: 150px;
   }
 
+  .image-container{
+    flex-direction: row;
+  }
+
+  @media screen and (max-width: 658px) {
+    .main-title{
+      font-size: 70px;
+    }
+
+    .paragraph{
+      font-size: 25px;
+    }
+
+    .image-container{
+      flex-direction: column;
+    }
+
+    .about-img{
+      width: 100%;
+      margin-bottom: 100px;
+    }
+
+  }
+
 }

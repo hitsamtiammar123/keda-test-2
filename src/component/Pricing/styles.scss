@@ -10,6 +10,7 @@
 
   .items{
     padding: 30px;
+    flex-direction: row;
     .item{
       display: flex;
       min-height: 100%;
@@ -21,6 +22,15 @@
       flex-direction: column;
       padding: 10px 20px;
       justify-content: space-around;
+    }
+  }
+
+  @media screen and (max-width: 658px) {
+    .items{
+      flex-direction: column;
+      .item{
+        margin-bottom: 40px;
+      }
     }
   }
 }

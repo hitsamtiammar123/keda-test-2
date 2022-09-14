@@ -11,7 +11,7 @@ export default function About(){
       <p className="paragraph text-center">
         Selamat Data di halaman kami. Disini kami menyediakan layanan ERP untuk perusahaan - perusahaan besar. Kami adalah salah satu service ERP terbaik di Indonesia. Anda tidak akan kecewa dengan layanan kami. Kami akan melakuakan yang terbaik yang bisa kami lakukan untuk kepuasan anda.
       </p>
-      <div className="d-flex flex-row justify-content-between mt-5">
+      <div className="d-flex justify-content-between mt-5 image-container">
         <img alt="Bar" className="about-img" src={Bar} />
         <img alt="Growing" className="about-img" src={Growing} />
         <img alt="Search" className="about-img" src={Search} />

@@ -5,7 +5,7 @@ export default function Pricing(){
   return (
     <div id="pricing" className="d-flex flex-column justify-content-evenly pricing">
         <span className="main-title text-center" >Pricing</span>
-        <div className="d-flex flex-row justify-content-center items">
+        <div className="d-flex justify-content-center items">
           <div className="item">
             <h2 className="mb-3 text-center">Tier 1 - Basic</h2>
             <ul className="mb-3">

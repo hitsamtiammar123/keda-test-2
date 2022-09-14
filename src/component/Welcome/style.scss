@@ -1,6 +1,7 @@
 .jumbotron{
   height: calc(100vh - 70px);
   width: 100%;
+  flex-direction: row;
 
   .img{
     width: 80%;
@@ -8,7 +9,26 @@
   }
 
   .jumbotron-text{
+    display: flex;
     font-size: 50px;
     font-weight: 800;
+    z-index: 2;
   }
+
+  .img-container{
+    display: flex;
+  }
+
+  @media screen and (max-width: 658px) {
+    flex-direction: column;
+
+    .jumbotron-text{
+      width: 100%;
+    }
+
+    .dropdown{
+      display: flex;
+    }
+  }
+
 }
