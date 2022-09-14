@@ -1,0 +1,56 @@
+.header{
+  width: 100vw;
+  height: 70px;
+
+  .main-title{
+    font-size: 20px;
+    color: white;
+    z-index: 1;
+  }
+
+  .bg-absolute{
+    background-color: #099DC6;
+    width: 50%;
+    height: 70%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+    left: -15%;
+  }
+
+  a{
+    text-decoration: none;
+    transition: color 0.2s;
+
+    &:hover{
+     color: #bff1ff;
+    }
+  }
+
+  .tabs{
+    z-index: 1;
+    .btn-login{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-color: #bff1ff;
+      color: #bff1ff;
+      border-radius: 3px;
+      background-color: white;
+      height: 30px;
+      min-width: 100px;
+    }
+
+    .tab{
+      font-size: 16px;
+      font-weight: 700;
+      color: black;
+      margin-right: 30px;
+
+      &:hover{
+        color: #bff1ff;
+       }
+    }
+  }
+
+}
