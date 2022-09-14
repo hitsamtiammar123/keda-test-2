@@ -31,10 +31,10 @@ export default function Header(){
                   <a href="#about">ABOUT</a>
                 </DropdownItem>
                 <DropdownItem>
-                  <a href="#about">PRICING</a>
+                  <a href="#pricing">PRICING</a>
                 </DropdownItem>
                 <DropdownItem>
-                  <a href="#about">CONTACT</a>
+                  <a href="#contact">CONTACT</a>
                 </DropdownItem>
                 <DropdownItem divider />
                 <DropdownItem>
