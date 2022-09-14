@@ -1,4 +1,4 @@
-import { Header, Welcome } from './component';
+import { Header, Welcome, About } from './component';
 import './App.scss';
 
 function App() {
@@ -6,6 +6,7 @@ function App() {
     <div className="App">
       <Header />
       <Welcome />
+      <About />
     </div>
   );
 }

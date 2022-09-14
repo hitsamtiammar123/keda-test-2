@@ -1,0 +1,23 @@
+.about{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(112,229,255,1) 0%, rgba(191,241,255,1) 10%, rgba(148,235,255,1) 80%, rgba(0,212,255,1) 100%);
+  padding: 20px;
+
+  .main-title{
+    font-size: 100px;
+    font-weight: 800;
+  }
+
+  .paragraph{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+  }
+
+  .about-img{
+    width: 200px;
+    height: 150px;
+  }
+
+}
