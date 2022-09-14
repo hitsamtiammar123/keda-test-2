@@ -1,4 +1,4 @@
-import { Header, Welcome, About } from './component';
+import { Header, Welcome, About, Pricing, Contact } from './component';
 import './App.scss';
 
 function App() {
@@ -7,6 +7,8 @@ function App() {
       <Header />
       <Welcome />
       <About />
+      <Pricing />
+      <Contact />
     </div>
   );
 }
